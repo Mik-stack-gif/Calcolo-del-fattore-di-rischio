@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy e sicurezza aziendale - Calcolo-del-fattore-di-rischio</title>
+    <!-- Importa Google Fonts per uno stile moderno -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+      /* Stile di base per il body con colori bianco e azzurro */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Base bianca */
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        overflow-x: hidden;
+      }
+      /* Effetto ornamentale in sottofondo con un pattern a nodo leggero */
+      body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-radial-gradient(
+          circle at 20% 20%, 
+          rgba(1,87,155,0.1), 
+          rgba(1,87,155,0.1) 2px, 
+          transparent 2px, 
+          transparent 50px
+        );
+        z-index: -1;
+        opacity: 0.5;
+      }
+      /* Container principale - occupa tutta la larghezza */
+      .container {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh; /* facoltativo, per coprire l'intera altezza */
+      }
+      /* Sezione centrale con sfondo gradiente - senza bordo */
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        background: linear-gradient(135deg, #e0f7fa, #ffffff);
+        padding: 20px;
+      }
+      /* Sezione testuale a sinistra */
+      .text-section {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+      }
+      .text-section h1 {
+        font-size: 2.5rem;
+        color: #01579b;
+        margin-bottom: 10px;
+      }
+      .text-section h2 {
+        font-size: 2rem;
+        color: #0277bd; /* Azzurro */
+        margin-bottom: 10px;
+      }
+      /* Paragrafo corsivo e testo base */
+      .text-section p {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      /* Classe per il testo più piccolo */
+      .smaller-text {
+        font-size: 0.9rem; /* Puoi ridurre o aumentare a piacimento */
+      }
+      .download-button {
+        display: inline-block;
+        background-color: #0277bd;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .download-button:hover {
+        background-color: #01579b;
+      }
+      /* Sezione immagine a destra */
+      .image-section {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+        text-align: center;
+      }
+      .image-section img {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid #01579b;
+        border-radius: 10px;
+      }
+      /* Layout responsive per schermi piccoli */
+      @media (max-width: 768px) {
+        .content {
+          flex-direction: column;
+        }
+        .image-section, .text-section {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <!-- Sezione testuale a sinistra -->
+        <div class="text-section">
+          <h1><em>Privacy e sicurezza aziendale</em></h1>
+          <h2><em>Calcolo del fattore di rischio</em></h2>
+          <p>
+            <em>
+              Nell'ambito delle aziende digitali, la sicurezza e la protezione dei dati diventa fondamentale.
+              Per questo motivo, calcolare e fare un'analisi del fattore di rischio diventa un elemento importante per
+              la prevenzione e per la gestione dei danni in caso di attacco.
+            </em>
+          </p>
+          <p class="smaller-text">
+            Fai click sul pulsante "Scarica il documento" per visionare la guida completa sul calcolo del fattore di rischio.
+          </p>
+          <a href="Calcolo-del-fattore-di-rischio.pdf" class="download-button" download>
+            Scarica il documento
+          </a>
+        </div>
+        <!-- Sezione immagine a destra -->
+        <div class="image-section">
+          <img src="informatica.jpg" alt="Immagine creata con IA - Informatica">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
